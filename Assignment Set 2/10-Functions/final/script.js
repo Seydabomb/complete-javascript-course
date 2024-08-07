@@ -227,7 +227,7 @@ Here are your tasks:
 
 1. Create a method called 'registerNewAnswer' on the 'poll' object. The method does 2 things:
   1.1. Display a prompt window for the user to input the number of the selected option. The prompt should look like this:
-        What is your favourite programming language?
+        What is your favorite programming language?
         0: JavaScript
         1: Python
         2: Rust
@@ -241,7 +241,7 @@ Here are your tasks:
 
 HINT: Use many of the tools you learned about in this and the last section 😉
 
-BONUS: Use the 'displayResults' method to display the 2 arrays in the test data. Use both the 'array' and the 'string' option. Do NOT put the arrays in the poll object! So what shoud the this keyword look like in this situation?
+BONUS: Use the 'displayResults' method to display the 2 arrays in the test data. Use both the 'array' and the 'string' option. Do NOT put the arrays in the poll object! So what should the this keyword look like in this situation?
 
 BONUS TEST DATA 1: [5, 2, 3]
 BONUS TEST DATA 2: [1, 5, 3, 9, 6, 1]
@@ -251,7 +251,7 @@ GOOD LUCK 😀
 
 /*
 const poll = {
-  question: 'What is your favourite programming language?',
+  question: 'What is your favorite programming language?',
   options: ['0: JavaScript', '1: Python', '2: Rust', '3: C++'],
   // This generates [0, 0, 0, 0]. More in the next section 😃
   answers: new Array(4).fill(0),
@@ -407,4 +407,3 @@ GOOD LUCK 😀
   });
 })();
 */
-
