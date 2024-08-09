@@ -650,3 +650,30 @@ GOOD LUCK 😀
 
 //   const movementsUI2 = [...document.querySelectorAll('.movements__value')];
 // });
+
+/*=================== Array Methods Practice =====================*/
+
+// #1
+const bankDepositSum = accounts
+  .flatMap(acc => acc.movements)
+  .filter(mov => mov > 0)
+  .reduce((sum, cur) => sum + cur, 0);
+console.log(bankDepositSum);
+
+// #2
+// Number of Deposits done with over $1000
+// const numDeposits1000 = account
+//   .flatMap(acc => acc.movements)
+//   .filter(mov => mov >= 1000).length;
+
+// reduce is starting the accumulator, count, at zero.
+const numDeposits1000 = accounts
+  .flatMap(acc => acc.movements)
+  // .reduce((count, cur) => (cur >= 1000 ? count + 1 : count), 0);
+  .reduce((count, cur) => (cur >= 1000 ? count++ : count), 0);
+
+console.log(numDeposits1000);
+
+let a = 10;
+console.log(a++); // outputs 10
+console.log(a); // outputs 11
