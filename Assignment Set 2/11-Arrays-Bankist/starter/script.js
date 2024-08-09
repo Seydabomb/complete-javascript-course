@@ -620,33 +620,33 @@ GOOD LUCK 😀
 // console.log(movements); // Now the numbers are in descending order
 
 /*=================== More Ways of Creating and Filling Arrays =====================*/
-const arr = [1, 2, 3, 4, 5, 6, 7];
-console.log(new Array(2, 3, 4, 5, 5, 6, 7));
+// const arr = [1, 2, 3, 4, 5, 6, 7];
+// console.log(new Array(2, 3, 4, 5, 5, 6, 7));
 
-// Empty arrays + fill method
-const x = new Array(7);
-console.log(x); // outputs [empty x 7]
-// console.log(x.map(() => 5));
-x.fill(1, 3, 5); // outputs [empty x 3, 1, 1, empty x 2]
-x.fill(1);
-console.log(x);
+// // Empty arrays + fill method
+// const x = new Array(7);
+// console.log(x); // outputs [empty x 7]
+// // console.log(x.map(() => 5));
+// x.fill(1, 3, 5); // outputs [empty x 3, 1, 1, empty x 2]
+// x.fill(1);
+// console.log(x);
 
-arr.fill(23, 2, 6);
-console.log(arr); // outputs [1,2,23,23,23,23,7]
+// arr.fill(23, 2, 6);
+// console.log(arr); // outputs [1,2,23,23,23,23,7]
 
-// Array.from
-const y = Array.from({ length: 7 }, () => 1); // outputs [1,1,1,1,1,1,1]
-console.log(y);
+// // Array.from
+// const y = Array.from({ length: 7 }, () => 1); // outputs [1,1,1,1,1,1,1]
+// console.log(y);
 
-const z = Array.from({ length: 7 }, (_, i) => i + 1);
-console.log(z); // outputs [1,2,3,4,5,6,7,]
+// const z = Array.from({ length: 7 }, (_, i) => i + 1);
+// console.log(z); // outputs [1,2,3,4,5,6,7,]
 
-labelBalance.addEventListener('click', function () {
-  const movementsUI = Array.from(
-    document.querySelectorAll('.movements__value'),
-    el => Number(el.textContent.replace('€', ''))
-  );
-  console.log(movementsUI);
+// labelBalance.addEventListener('click', function () {
+//   const movementsUI = Array.from(
+//     document.querySelectorAll('.movements__value'),
+//     el => Number(el.textContent.replace('€', ''))
+//   );
+//   console.log(movementsUI);
 
-  const movementsUI2 = [...document.querySelectorAll('.movements__value')];
-});
+//   const movementsUI2 = [...document.querySelectorAll('.movements__value')];
+// });
