@@ -669,7 +669,7 @@ GOOD LUCK 😀
 // // reduce is starting the accumulator, count, at zero.
 // const numDeposits1000 = accounts
 //   .flatMap(acc => acc.movements)
-//   .reduce((count, cur) => (cur >= 1000 ? ++count : count), 0); // the arrow function implicitely returns the accumulator, count.
+//   .reduce((count, cur) => (cur >= 1000 ? ++count : count), 0); // the arrow function implicitly returns the accumulator, count.
 
 // console.log(numDeposits1000);
 
