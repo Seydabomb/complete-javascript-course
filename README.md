@@ -30,6 +30,8 @@
 
 ### Section 17: Modern JavaScript Development- Modules, Tooling, and NPM
 
+# Course Author's Notes:
+
 This branch of the repo contains starter files for all sections and projects of the course, **exactly as shown in the videos**.
 
 There is also a the [updates-and-fixes](https://github.com/jonasschmedtmann/complete-javascript-course/tree/updates-and-fixes) branch which is kept up-to-date with **latest package updates and important bugfixes 🐛**
