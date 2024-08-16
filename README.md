@@ -1,8 +1,36 @@
-# Course Material and FAQ for my Complete JavaScript Course
+# Complete JS Course Done Through 4 Assignments
 
-This branch of the repo contains starter files and final code for all sections and projects of the course, **exactly as shown in the videos**.
+## Assignment 1: Sections 7,8, & 9
 
-Use starter code to start each section, and **final code to compare it with your own code whenever something doesn't work**!
+### Section 7: JavaScript in the Browser- DOM and Events Fundamentals
+
+### Section 8: How JS Works Behind the Scenes
+
+### Section 9: Data Structures, Modern Operators and Strings
+
+## Assignment 2: Sections 10,11, & 12
+
+### Section 10: A Closer Look at Functions
+
+### Section 11: Working With Arrays
+
+### Section 12: Numbers, Dates, Intl and Timers
+
+## Assignment 3: Sections 13 & 14
+
+### Section 13: Advanced DOM and Events
+
+### Section 14: Object-Oriented Programming (OOP) With JavaScript
+
+## Assignment 4: Sections 10,11, & 12
+
+### Section 15: Mapty App- OOP, Geolocation, External Libraries, and More!
+
+### Section 16: Asynchronous JavaScript- Promises, Async/Await, and AJAX
+
+### Section 17: Modern JavaScript Development- Modules, Tooling, and NPM
+
+This branch of the repo contains starter files for all sections and projects of the course, **exactly as shown in the videos**.
 
 There is also a the [updates-and-fixes](https://github.com/jonasschmedtmann/complete-javascript-course/tree/updates-and-fixes) branch which is kept up-to-date with **latest package updates and important bugfixes 🐛**
 
