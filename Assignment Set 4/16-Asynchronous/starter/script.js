@@ -1,5 +1,8 @@
 'use strict';
 
+const btn = document.querySelector('.btn-country');
+const countriesContainer = document.querySelector('.countries');
+
 const renderCountry = function (data) {
   const languages = Object.values(data.languages);
   const currencies = Object.values(data.currencies);
@@ -22,9 +25,6 @@ const renderCountry = function (data) {
 };
 
 const getCountryAndNeighbor = function (country) {
-  const btn = document.querySelector('.btn-country');
-  const countriesContainer = document.querySelector('.countries');
-
   ///////////////////////////////////////
   const request = new XMLHttpRequest();
   request.open('GET', `https://restcountries.com/v3.1/name/${country}`);
