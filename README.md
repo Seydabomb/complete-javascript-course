@@ -22,7 +22,7 @@
 
 ### Section 14: Object-Oriented Programming (OOP) With JavaScript
 
-## Assignment 4: Sections 10, 11, & 12
+## Assignment 4: Sections 15, 16, & 17
 
 ### Section 15: Mapty App- OOP, Geolocation, External Libraries, and More!
 
