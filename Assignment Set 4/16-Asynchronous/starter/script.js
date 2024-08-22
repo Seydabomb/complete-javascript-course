@@ -203,31 +203,62 @@ PART 2
 
 TEST COORDINATES 1: 52.508, 13.381 (Latitude, Longitude)
 TEST COORDINATES 2: 19.037, 72.873
-TEST COORDINATES 2: -33.933, 18.474
+TEST COORDINATES 3: -33.933, 18.474
 
 GOOD LUCK 😀
 */
 
-const whereAmI = function (lat, lng) {
-  fetch(`https://geocode.xyz/${lat},${lng}?geoit=json`)
-    .then(res => {
-      if (!res.ok) throw new Error(`Problem with geocoding ${res.status}`);
-      return res.json();
-    })
-    .then(data => {
-      console.log(data);
-      console.log(`You are in ${data.city}, ${data.country}`);
+// const whereAmI = function (lat, lng) {
+//   fetch(`https://geocode.xyz/${lat},${lng}?geoit=json`)
+//     .then(res => {
+//       if (!res.ok) throw new Error(`Problem with geocoding ${res.status}`);
+//       return res.json();
+//     })
+//     .then(data => {
+//       console.log(data);
+//       console.log(`You are in ${data.city}, ${data.country}`);
 
-      return fetch(`https://restcountries.com/v3.1/name/${data.country}`);
-    })
-    .then(res => {
-      if (!res.ok) throw new Error(`Country not found (${res.status})`);
-      // Also an asynchronous function so it returns another promise
-      return res.json();
-    })
-    .then(data => renderCountry(data[0]))
-    .catch(err => console.error(`${err.message} 💥`));
-};
-whereAmI(52.508, 13.381); // You are in Mumbai, India
-whereAmI(19.037, 72.873); // You are in Berlin, Germany
-whereAmI(-33.933, 18.474); // You are in Cape Town, South Africa
+//       return fetch(`https://restcountries.com/v3.1/name/${data.country}`);
+//     })
+//     .then(res => {
+//       if (!res.ok) throw new Error(`Country not found (${res.status})`);
+//       // Also an asynchronous function so it returns another promise
+//       return res.json();
+//     })
+//     .then(data => renderCountry(data[0]))
+//     .catch(err => console.error(`${err.message} 💥`));
+// };
+// whereAmI(52.508, 13.381); // You are in Mumbai, India
+// whereAmI(19.037, 72.873); // You are in Berlin, Germany
+// whereAmI(-33.933, 18.474); // You are in Cape Town, South Africa
+
+/* =========== The Event Loop in practice ========== */
+/* First Part
+// console.log('Test start');
+// setTimeout(() => console.log('0 sec timer'), 0);
+// Promise.resolve('Resolved promise 1').then(res => console.log(res));
+// console.log('Test end');
+
+// // Test start
+// // Test end
+// // Resolved promise 1
+// // 0 sec timer
+*/
+
+/* Second Part
+console.log('Test start');
+setTimeout(() => console.log('0 sec timer'), 0);
+Promise.resolve('Resolved promise 1').then(res => console.log(res));
+
+Promise.resolve('Resolved promise 2').then(res => {
+  for (let i = 0; i < 10000000; i++) {}
+  console.log(res);
+});
+console.log('Test end');
+
+// Test start
+// Test end
+// Resolved promise 1
+// Resolved Promise 2
+// 0 sec timer
+*/
