@@ -88,7 +88,8 @@ console.log(cart);
 //  const {addToCart} = require('./shoppingCart');
 
 /* ============================== Intro to NPM ================================  */
-import cloneDeep from './node_modules/lodash-es/cloneDeep.js';
+// import cloneDeep from './node_modules/lodash-es/cloneDeep.js';
+import cloneDeep from 'lodash-es';
 
 const state = {
   cart: [
