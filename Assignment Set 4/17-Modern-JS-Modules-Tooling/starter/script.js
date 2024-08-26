@@ -111,7 +111,29 @@ console.log(stateClone); // false
 
 console.log(stateDeepClone); // true
 
-// Page will not reload
+// Page will not reload, so like in bankist we don't have to re-login every time
 if (module.hot) {
   module.hot.accept();
 }
+
+class Person {
+  greeting = 'Hey';
+  constructor(name) {
+    this.name = name;
+    console.log(`${this.greeting}, ${this.name}`);
+  }
+}
+const jonas = new Person('Jonas');
+
+console.log('Jonas' ?? null);
+
+console.log(cart.find(el => el.quantity >= 2));
+
+Promise.resolve('TEST').then(x => console.log(x));
+
+import 'core-js/stable';
+// import 'core-js/stable/array/find';
+// import 'core-js/stable/promise';
+
+// Polifilling async functions
+import 'regenerator-runtime/runtime.js';
