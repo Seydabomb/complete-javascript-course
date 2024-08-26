@@ -109,3 +109,8 @@ state.user.loggedIn = false;
 console.log(stateClone); // false
 
 console.log(stateDeepClone); // true
+
+// Page will not reload
+if (module.hot) {
+  module.hot.accept();
+}
